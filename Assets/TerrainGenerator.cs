@@ -12,10 +12,15 @@ public class TerrainGenerator : MonoBehaviour
     public float offsetX = 100f;
     public float offsetY = 100f;
 
+    public string seed;
+	public bool useRandomSeed;
+
     void Start()
     {
-        offsetX = Random.Range(0f,1000f);
-        offsetY = Random.Range(0f,1000f);
+        if(useRandomSeed){
+            offsetX = Random.Range(0f,9999f);
+            offsetY = Random.Range(0f,9999f);
+        }
 
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
@@ -33,6 +38,8 @@ public class TerrainGenerator : MonoBehaviour
     }
 
     float[,] GenerateHeights(){
+       
+
         float[,] heights = new float[width,height];
         for (int x=0; x<width;x++){
             for(int y=0; y<height;y++){
@@ -44,8 +51,24 @@ public class TerrainGenerator : MonoBehaviour
     }
 
     float CalculateHeight(int x, int y){
-        float xCoord =  (float)x/width * scale * offsetX;
-        float yCoord = (float)y/height * scale * offsetY;
+         	/* if (useRandomSeed) {
+			seed = Time.time.ToString();
+		} */
+
+		System.Random pseudoRandom = new System.Random(seed.GetHashCode());
+
+        float xCoord;
+        float yCoord;
+
+        if(useRandomSeed){
+        xCoord =  (float)x/width * scale + offsetX;
+        yCoord = (float)y/height * scale + offsetY;
+        }
+        else{
+        xCoord =  (float)x/width * scale + pseudoRandom.Next(0,9999);;
+        yCoord = (float)y/height * scale + pseudoRandom.Next(0,9999);;
+        }
+
 
         return Mathf.PerlinNoise(xCoord, yCoord);
     }
