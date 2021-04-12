@@ -43,26 +43,16 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     public float jumpCooldown = 1.0f;
     private bool jumpBlocked = false;
 
-    private SFPSC_WallRun wallRun;
-    private SFPSC_GrapplingHook grapplingHook;
+    
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
 
-        TryGetWallRun();
-        TryGetGrapplingHook();
+       
     }
 
-    public void TryGetWallRun()
-    {
-        this.TryGetComponent<SFPSC_WallRun>(out wallRun);
-    }
-
-    public void TryGetGrapplingHook()
-    {
-        this.TryGetComponent<SFPSC_GrapplingHook>(out grapplingHook);
-    }
+    
 
     private bool isGrounded = false;
     public bool IsGrounded { get { return isGrounded; } }
@@ -72,7 +62,7 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     private float prevY;
     private void FixedUpdate()
     {
-        if ((wallRun != null && wallRun.IsWallRunning) || (grapplingHook != null && grapplingHook.IsGrappling))
+        if (2==0)
             isGrounded = false;
         else
         {
