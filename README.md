@@ -16,5 +16,7 @@ Jeg har også addet
 - Randomizer effekt som når checket randomizer hvor meget perlin noise intensificeres.
 - Jeg har også gjort så man bare som værdi kan vælge hvor meget perlin noise intensificeres.
 
+Udover procedural delen af er man en person som skal nå hen til sin ven som står klar med et fly, når man gør det når man hen til mathias bane som starter i luften efter man har hoppet af flyet.
+Hvis man rør lavaen er der en UI som fortæller en at man tabte.
 
 Det har været lidt svært for mig at se hvordan jeg skulle lave det bedre herfra, udover det har der været merge fejl selvom at vi arbejdet i hver vores scene. Håber det her kan lade mig gå videre, så jeg kan lave noget bedre næste gang.
