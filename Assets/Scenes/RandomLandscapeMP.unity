@@ -123,6 +123,27 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &43965841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d046e3917e4d8580903c69758b6558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  label: Height
+  blendMode: 2
+  opacity: 100
+  passIndex: 0
+  min: 0
+  minFalloff: 1
+  max: 99
+  maxFalloff: 1
 --- !u!1 &319940215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 318558667410557219, guid: 6f70f27228bff2345909adf7830839f5, type: 3}
@@ -170,11 +191,11 @@ MonoBehaviour:
   - enabled: 1
     layer: {fileID: 8574412962073106934, guid: c52ad77efecd38146bfb167ad0f38daf, type: 2}
     modifierStack:
-    - {fileID: 1331552217}
+    - {fileID: 43965841}
   - enabled: 1
     layer: {fileID: 8574412962073106934, guid: 69debc15b685aef4aa7bb2783ddd8a2b, type: 2}
     modifierStack:
-    - {fileID: 992252491}
+    - {fileID: 1303803506}
   - enabled: 1
     layer: {fileID: 8574412962073106934, guid: a026f67c6452bb7488422ec75c67c660, type: 2}
     modifierStack: []
@@ -199,26 +220,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &992252491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2562637f396e4c10acd3fa9926b53a12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enabled: 1
-  label: Slope
-  blendMode: 0
-  opacity: 100
-  passIndex: 1
-  minMax: {x: 16.744186, y: 90}
-  minFalloff: 10
-  maxFalloff: 10
 --- !u!1 &1084900128
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +351,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1331552217
+--- !u!114 &1303803506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,18 +360,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1d046e3917e4d8580903c69758b6558, type: 3}
+  m_Script: {fileID: 11500000, guid: 2562637f396e4c10acd3fa9926b53a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enabled: 1
-  label: Height
-  blendMode: 2
+  label: Slope
+  blendMode: 0
   opacity: 100
-  passIndex: 0
-  min: 0
-  minFalloff: 1
-  max: 86.25
-  maxFalloff: 1
+  passIndex: 1
+  minMax: {x: 13.285713, y: 90}
+  minFalloff: 5.2
+  maxFalloff: 5.6
 --- !u!1 &1348709872
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
   treeTypes:
   - enabled: 1
     name: DemoSpruce
-    seed: 53044
+    seed: 53545
     probability: 17.3
     collisionCheck: 0
     rejectUnderwater: 0
@@ -525,7 +525,7 @@ MonoBehaviour:
     slopeRange: {x: 0, y: 60}
     curvatureRange: {x: 0, y: 1}
     layerMasks: []
-    instanceCount: 5049
+    instanceCount: 4861
     prefabs:
     - index: 0
       probability: 100
