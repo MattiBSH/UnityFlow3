@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UIDEATHSCENE.unity
     guid: 50fe48074bd6f8047baa976dcf551175
+  - enabled: 1
+    path: Assets/Scenes/RandomLandscapeMP.unity
+    guid: adade1f09b52db647bbf0fa3d79a6693
   m_configObjects: {}

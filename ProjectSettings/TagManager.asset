@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Terrain
   - Lava
+  - Win
   layers:
   - Default
   - TransparentFX
