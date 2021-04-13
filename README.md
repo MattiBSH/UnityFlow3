@@ -11,7 +11,10 @@ I mit procedural bruger jeg
 
 Jeg har også en drawGismos() så jeg kan se 
 
-
+Jeg har også addet 
 - Mesh collider Generation, så man rent faktisk ikke bare kan se terrainet men også gå på det.
 - Randomizer effekt som når checket randomizer hvor meget perlin noise intensificeres.
 - Jeg har også gjort så man bare som værdi kan vælge hvor meget perlin noise intensificeres.
+
+
+Det har været lidt svært for mig at se hvordan jeg skulle lave det bedre herfra, udover det har der været merge fejl selvom at vi arbejdet i hver vores scene. Håber det her kan lade mig gå videre, så jeg kan lave noget bedre næste gang.
