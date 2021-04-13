@@ -16,6 +16,8 @@ Jeg har også addet
 - Randomizer effekt som når checket randomizer hvor meget perlin noise intensificeres.
 - Jeg har også gjort så man bare som værdi kan vælge hvor meget perlin noise intensificeres.
 
+Jeg har lavet min egen ikke baseret på noget specifikt vegetation spawner som spawner random vegetation udfra en liste af valgte prefabs inde for et området, ville gerne havde gjort så hvis det ramte lava at det gik i stykker men kunne ikke lige få mit hovedet rundt om det.
+
 Udover procedural delen af er man en person som skal nå hen til sin ven som står klar med et fly, når man gør det når man hen til mathias bane som starter i luften efter man har hoppet af flyet.
 Hvis man rør lavaen er der en UI som fortæller en at man tabte.
 
