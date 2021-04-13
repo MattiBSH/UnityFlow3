@@ -4,7 +4,7 @@ Matti
 
 
 Jeg har lavet Procedural Content Generation.
-Jeg brugt en del a min ferie på at forsøge at få noget til at virke som jeg måtte komme til den konklusion at tutorialen var forældet og at man ikke længere kunne gøre det på den måde.
+Jeg brugt en del af min ferie på at forsøge at få noget til at virke som jeg måtte komme til den konklusion at tutorialen var forældet og at man ikke længere kunne gøre det på den måde.
 Jeg brugte så 3 brackeys tutorials som basis for mit procedural som jeg så har addet mit eget spin på.
 I mit procedural bruger jeg
 
@@ -17,7 +17,7 @@ I mit procedural bruger jeg
 
 3 uvs er brugt så mit material ikke ville se mærkeligt ud, da den ikke kan finde ud af hvordan den skal processe det hvis man ikke har defineret det.
 
-Jeg har også en drawGismos() så jeg kan se 
+Jeg har også en drawGismos() så jeg kan se hvor vertices punkterne er.
 
 Jeg har også addet 
 - Mesh collider Generation, så man rent faktisk ikke bare kan se terrainet men også gå på det.
