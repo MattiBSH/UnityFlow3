@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Matti/MattiScene.unity
+    guid: 4b5f4b59b28f2d8448f1d0d1a099a58e
+  - enabled: 1
+    path: Assets/Scenes/UIDEATHSCENE.unity
+    guid: 50fe48074bd6f8047baa976dcf551175
   m_configObjects: {}
