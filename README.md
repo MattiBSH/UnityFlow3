@@ -30,3 +30,13 @@ Udover procedural delen af er man en person som skal nå hen til sin ven som st�
 Hvis man rør lavaen er der en UI som fortæller en at man tabte.
 
 Det har været lidt svært for mig at se hvordan jeg skulle lave det bedre herfra, udover det har der været merge fejl selvom at vi arbejdet i hver vores scene. Håber det her kan lade mig gå videre, så jeg kan lave noget bedre næste gang.
+
+
+Mathias:
+Jeg har valgt at fokusere på PCG så i dette projekt har jeg brugt PCG til at generere en bane.
+
+Banen består af et terrain, som ved hjælp af en Perlin Noise algoritme, kan generere et tilfældigt terrain hver gang banen loades.
+Jeg har brugt terrain painter til at tegne textures på terrainet alt efter dets højde og hældning. Så på toppen af bakkerne er der sne, og der hvor bakkerne er stejlest, er der klipper. Resten er en græs texture.
+Jeg har dertil også brugt en tree generator til at spawne treer fordelt på det random terrain. Har haft svært ved at få den component til at generere treerne hver gang spillet startes, så man er nødt til at trykke på en knap i den component der genererer dem igen. Buske og højt græs fik jeg aldrig til at virke.
+
+Jeg forsøgte mig med den "Cave generation" tutorial Jesper havde linket til i sine slides, og jeg fulgte den så godt jeg kunne, men noget ville ikke virke, så der sad jeg fast og måtte give op.
